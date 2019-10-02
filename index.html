@@ -51,7 +51,7 @@
 
           <li>
             <!-- vertical line separator with spaces (different color) -->
-            <pre class="lightgrey-vline">  |  </pre>
+            <p class="lightgrey-vline">|</p>
           </li>
 
           <!-- Nav to Portfolio -->
@@ -61,7 +61,7 @@
 
           <li>
             <!-- vertical line separator with spaces (different color) -->
-            <pre class="lightgrey-vline">  |  </pre>
+            <p class="lightgrey-vline">|</p>
           </li>
 
           <!-- Nav to Contacts -->
@@ -79,35 +79,56 @@
 
 
 
-  <section class="page-content">
-    <!-- block with h3 header & content -->
-    <h3 class="section-header">About Maura</h3>
-    <img id="my-face" src="assets/images/maura-bio.png" alt="My Portrait"> <!-- image of me! -->
-    <article class="text">
-      <!-- div to consistently format text in multiple paragraphs  -->
-      <!-- first paragraph has different top margin to keep it even with the image -->
-      <p class="first-parag">Hello! I’m Maura Slavin, and I’m excited to get back into coding!</p>
-      <p>Before the "boring" career-related bio, here are some fun facts about me:</p>
-      <ul id="list-margin">
-        <li>I once jumped out of an airplane.</li>
-        <li>All four of our daughters were born without painkillers.</li>
-        <li>I hiked Mt. Jefferson by myself. I didn't make it to the top, but hope to one day. It was BEAUTIFUL!!</li>
-        <li>I'm teaching myself Spanish on Duolingo.</li>
-      </ul>
-      <p>I worked for IBM as a programmer in the past and took a break to raise my family. I have always enjoyed working
-        on the computer. Much of our household tasks are digitalized, from family finances to household chores. I’m
-        eagerly anticipating work that stimulates me intellectually.
-        Since leaving IBM, I have done many diverse things. Starting slow, with leading Girl Scout troops and teaching
-        religious ed classes. Then stepping up to overseeing regional Girl Scout financial accounts and part time jobs.
-        Most recently, I’ve led the formation of a new 501c3 non-profit, Marina’s Miles (see MarinasMiles.org) which has
-        awarded $12,000 in scholarships over the past three years, and has almost twice that invested for future
-        scholarships.</p>
-      <p>I enjoy spending time with my family, bicycling, reading, hiking and just being outside (in almost any kind of
-        weather – as long as I’m dressed properly ;) ).</p>
-      <p>Thank you for visiting my page, and I hope we have the pleasure of meeting soon!</p>
-    </article>
-  </section>
+  <!-- main content is a container of one row -->
+  <div class="container bg page-content">
 
+    <div class="row top-blank-row">
+      <!-- so border shows-->
+    </div>
+
+    <div class="row justify-content-md-center">
+      <!-- "About (name)" -->
+      <div class="col-md-10 bg-white">
+        <h3>About Maura</h3>
+      </div>
+    </div> <!-- of 2nd row w/pic & paragraph -->
+
+    <div class="row justify-content-md-center">
+      <!-- pic & paragraph -->
+      <div class="col-md-10 bg-white">
+
+        <img class="float-left" id="my-face" src="assets/images/maura-bio.png" alt="My Portrait"> <!-- image of me! -->
+        <article class="text">
+          <!-- div to consistently format text in multiple paragraphs  -->
+          <!-- first paragraph has different top margin to keep it even with the image -->
+          <p class="first-parag">Hello! I’m Maura Slavin, and I’m excited to get back into coding!</p>
+          <p>Before the "boring" career-related bio, here are some fun facts about me:</p>
+          <ul id="list-margin">
+            <li>I once jumped out of an airplane.</li>
+            <li>All four of our daughters were born without painkillers.</li>
+            <li>I hiked Mt. Jefferson by myself. I didn't make it to the top, but hope to one day. It was BEAUTIFUL!!
+            </li>
+            <li>I'm teaching myself Spanish on Duolingo.</li>
+          </ul>
+          <p>I worked for IBM as a programmer in the past and took a break to raise my family. I have always enjoyed
+            working on the computer. Much of our household tasks are digitalized, from family finances to household
+            chores. I’m eagerly anticipating work that stimulates me intellectually. Since leaving IBM, I have done many
+            diverse things. Starting slow, with leading Girl Scout troops and teaching religious ed classes. Then
+            stepping up to overseeing regional Girl Scout financial accounts and part time jobs. Most recently, I’ve led
+            the formation of a new 501c3 non-profit, Marina’s Miles (see MarinasMiles.org) which has awarded $12,000 in
+            scholarships over the past three years, and has almost twice that invested for future scholarships.</p>
+          <p>I enjoy spending time with my family, bicycling, reading, hiking and just being outside (in almost any kind
+            of weather – as long as I’m dressed properly ;) ).</p>
+          <p>Thank you for visiting my page, and I hope we have the pleasure of meeting soon!</p>
+      </div> <!-- of column w/pic & paragraph -->
+    </div> <!-- of row w/pic & paragraph -->
+
+    <div class="row bottom-blank-row">
+      <!-- so border shows-->
+    </div>
+
+
+  </div> <!-- of container -->
 
   <div id="footer">
     <!-- footer -->

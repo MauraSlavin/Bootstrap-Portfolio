@@ -13,15 +13,16 @@ body {
 header {
   display: block;
   margin: auto;
-  padding: 0 194.5px;                                 /* leaves 960 for content */
+  padding: 0;     /* was "0 194.5px" */                             /* leaves 960 for content */
   background-color: #ffffff;                       /* main header background color is white */
   border: solid 0px #cccccc;
   border-bottom-width: 3px;
 }
 
 #container-overrides {
-  width: 100%;
+  /* width: 100%; */
   border-bottom: 3px solid #cccccc;
+  margin: 0;
 }
 
 /* font & default spacing for Main header and Section headers */
@@ -67,7 +68,7 @@ h3 {                                     /* text color for h3 section headers */
 h3:after {                        /* separator line is drawn as a border under h3 header */
   content : "";                               /* Needed for pseudo element to work */
   display: block;                             /* puts border on it's own line */
-  width  : 930px;                             /* length of border */
+/*  width  : 930px;   */                          /* length of border */
   border-bottom: 2px solid #cccccc;         /* thickness, style & color of border */
   padding-bottom: 20px;                        /* space between page title & border */
 }
@@ -114,19 +115,39 @@ a {
 /* format element that has the main page content in it, consistent across all pages */
 .page-content {
   border: solid 0;
-  width: 960x;                                     /* make content width 960px as per instructions */
-  border-width: 30px 194.5px 80px 194.5px;        /* leaves 960px for block width; top & bottom image borders */
+  width: 100%;                                     /* make content width 960px as per instructions */
+  /* border-width: 30px 194.5px 80px 194.5px;        /* leaves 960px for block width; top & bottom image borders */
   margin: 0;
-/* border-image: http://www.zingerbugimages.com/backgrounds/aqua_marble_seamless.jpg); */
-  border-image-source: url(../images/aqua_marble_seamless.jpg);
-  border-image-repeat: initial;
-  border-image-slice: 67;     /* full height & width of image is 500x500; 67 looked nice. */
+
 }
-             
+
+
+.top-blank-row {
+  content: "  ";
+  height: 60px;
+}
+
+
+.bottom-blank-row {
+  content: "  ";
+  height: 100px;
+}
+
+.bg {
+  /* The image used */
+  background-image: url(../images/aqua_marble_seamless.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* image goes to the left (so text can wrap around it), and leave buffer between image and text */
 #my-face {
-  float: left;
   margin-right: 15px;                               /* leaves space between image and text */
   padding: 0px 0px 0px 20px;                        /* leaves space left of the image so it lines up with the header & text */
 }
