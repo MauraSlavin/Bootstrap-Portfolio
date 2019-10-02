@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!-- <html charset="UTF-8">  -->
+
+<!-- Portfolio website for Maura M Slavin -->
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Maura M Slavin - Contact</title> <!-- Appears on tab -->
+  <!-- bootstrap elements -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Linking my CSS overrides to Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+
+<body>
+
+  <!-- Header (same for all pages) -->
+
+  <div class="container clearfix" id="container-overrides">
+
+    <!-- Header is one row  -->
+    <div class="row" id="hdr-row-height">
+
+      <!-- First column of header row is empty. -->
+      <div class="col-md-1">
+        <!-- no content -->
+      </div>
+
+      <!-- 2nd column of header row has name -->
+      <div class="col-md-3" id="adj-padding-color-margin">
+        <h2 class="h2-overrides"><strong>Maura M. Slavin</strong></h2>
+      </div>
+
+      <!-- 3rd column of header row is empty -->
+      <div class="col-md-4">
+        <!-- no content -->
+      </div>
+
+      <!-- 4th column of header row has nav bar -->
+      <div class="col-md-3">
+
+        <ul class="nav justify-content-end pt-3" id="nav-overrides">
+
+          <!-- Nav to About -->
+          <li class="nav-item">
+            <a class="nav-link active" href="#about">About</a>
+          </li>
+
+          <li>
+            <!-- vertical line separator with spaces (different color) -->
+            <pre class="lightgrey-vline">  |  </pre>
+          </li>
+
+          <!-- Nav to Portfolio -->
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+
+          <li>
+            <!-- vertical line separator with spaces (different color) -->
+            <pre class="lightgrey-vline">  |  </pre>
+          </li>
+
+          <!-- Nav to Contacts -->
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+        </ul> <!-- of unordered list-->
+
+      </div> <!-- of nav column in header row -->
+    </div> <!-- of header row -->
+
+  </div> <!-- of header container -->
+
+
+
+
+
+  <section class="page-content">
+    <!-- block with h2 header & content -->
+    <h2>Contact Maura</h2>
+    <form action="/action_page.php" class="input-prompt-block">
+      <!-- Validator says: The value of the for attribute of the label element must be the ID of a non-hidden form control.  May need fixing. -->
+      <label for="name" class="input-prompt" id="first-prompt">Name</label>
+
+      <!-- validator said text-short & placeholder were wrong, but it doesn't work without it. -->
+      <input type="text-short" class="text-short" name="sender-name" placeholder="John Smith">
+
+      <!-- validator said text-short & placeholder were wrong, but it doesn't work without it. -->
+      <!-- Validator says: The value of the for attribute of the label element must be the ID of a non-hidden form control.  May need fixing. -->
+      <label for="email" class="input-prompt">Email</label>
+      <input type="text-short" class="text-short" name="sender-email" placeholder="example@gmail.com">
+
+      <!-- validator said type w/textarea was wrong; and  but it doesn't work without it. -->
+      <label for="message" class="input-prompt">Message</label>
+      <textarea type=text-long id="message" name="sender-msg" cols="200" rows="5"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <div id="footer">
+    <!-- footer -->
+    <p>Copyright @2019</p>
+  </div>
+
+</body>
+
+</html>
