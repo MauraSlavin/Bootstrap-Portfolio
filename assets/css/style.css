@@ -262,11 +262,18 @@ a {
 }
 
 
+#form-padding {
+  padding-left: 20px;
+}
+
 .input-prompt {
   margin-bottom: 10px;
   vertical-align: text-top;
 }
 
+#submit-margin {
+  margin-bottom: 20px;
+}
 
 #first-prompt {
   line-height: 12px;

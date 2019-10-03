@@ -46,7 +46,7 @@
 
           <!-- Nav to About -->
           <li class="nav-item">
-            <a class="nav-link active" href="#about">About</a>
+            <a class="nav-link active" href="index.html">About</a>
           </li>
 
           <li>
@@ -66,7 +66,7 @@
 
           <!-- Nav to Contacts -->
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
 
         </ul> <!-- of unordered list-->
@@ -80,28 +80,55 @@
 
 
 
-  <section class="page-content">
-    <!-- block with h2 header & content -->
-    <h2>Contact Maura</h2>
-    <form action="/action_page.php" class="input-prompt-block">
-      <!-- Validator says: The value of the for attribute of the label element must be the ID of a non-hidden form control.  May need fixing. -->
-      <label for="name" class="input-prompt" id="first-prompt">Name</label>
 
-      <!-- validator said text-short & placeholder were wrong, but it doesn't work without it. -->
-      <input type="text-short" class="text-short" name="sender-name" placeholder="John Smith">
+  <!-- main content is a container of one row -->
+  <div class="container bg page-content">
 
-      <!-- validator said text-short & placeholder were wrong, but it doesn't work without it. -->
-      <!-- Validator says: The value of the for attribute of the label element must be the ID of a non-hidden form control.  May need fixing. -->
-      <label for="email" class="input-prompt">Email</label>
-      <input type="text-short" class="text-short" name="sender-email" placeholder="example@gmail.com">
+    <div class="row top-blank-row clearfix">
+      <!-- so border shows-->
+    </div>
 
-      <!-- validator said type w/textarea was wrong; and  but it doesn't work without it. -->
-      <label for="message" class="input-prompt">Message</label>
-      <textarea type=text-long id="message" name="sender-msg" cols="200" rows="5"></textarea>
+    <div class="row justify-content-md-center clearfix">
+      <!-- "Contact" -->
+      <div class="col-md-10 bg-white">
+        <h3>Contact Maura</h3>
+      </div>
+    </div> <!-- of 2nd row w/pic & paragraph -->
 
-      <input type="submit" value="Submit">
-    </form>
-  </section>
+    <div class="row justify-content-md-center clearfix">
+      <div class="col-md-10 bg-white">
+        <form id="form-padding">
+          <div class="form-group">
+            <label for="inputName">Name</label>
+            <input type="name" class="form-control" id="inputName" placeholder="John Smith">
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+              placeholder="example@gmail.com">
+          </div>
+
+          <div class="form-group">
+            <label for="inputMessage">Message</label>
+            <textarea class="form-control" id="inputMessage" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary"id="submit-margin">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row bottom-blank-row">
+      <!-- so border shows-->
+    </div>
+
+
+  </div> <!-- of container -->
+
+
+
+
+
 
   <div id="footer">
     <!-- footer -->
