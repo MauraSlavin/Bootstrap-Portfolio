@@ -130,8 +130,15 @@ a {
 
 .bottom-blank-row {
   content: "  ";
-  height: 100px;
+  height: 120px;
 }
+
+
+.short-blank-row {
+  content: "  ";
+  height: 40px;
+}
+
 
 .bg {
   /* The image used */
@@ -170,6 +177,14 @@ a {
   line-height: 19px;
 }
 
+.adj-padding-img {
+  margin: 0;
+  padding: 0;
+}
+
+.adj-padding-col {
+  padding: 0;
+}
 
 #allprojects {                                    /* element to hold all the projects */
   height: 1000px;
@@ -177,17 +192,37 @@ a {
   background-color: #ffffff;
 }
 
+
+.img-text-align {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4aaaa5;
+  color: white;
+  width: 100%;
+  padding: 20px 0px;
+  top: 0;
+  margin-left: 0px;
+  width: 283px;
+}
+
+.proj-container {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+
 .proj-links {                             /* formats everything that is the same for all the links & images */
   height: 40px;
-  width: 300px;
+  width: 244px;
   font-size: large;
   background-color: #4aaaa5;
   color: #ffffff;
-  margin: 200px 0 0 20px;
+  margin: 200px 0 0 0;
   text-align: center;
-  padding: 15px 0 0 0;
+  padding: 8px 0 0 0;
   position: absolute;                   /*  the teal box is placed relative to the parent element */
-  float: left;                          /* stack elements starting on the left */
 }
 
 .proj-link-left {                     /* all the projects that are on the left, are 194.5px from the left edge of the parent element */

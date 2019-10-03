@@ -21,109 +21,206 @@
 
   <div class="container clearfix" id="container-overrides">
 
-      <!-- Header is one row  -->
-      <div class="row" id="hdr-row-height">
-  
-        <!-- First column of header row is empty. -->
-        <div class="col-md-1">
-          <!-- no content -->
-        </div>
-  
-        <!-- 2nd column of header row has name -->
-        <div class="col-md-3" id="adj-padding-color-margin">
-          <h2 class="h2-overrides"><strong>Maura M. Slavin</strong></h2>
-        </div>
-  
-        <!-- 3rd column of header row is empty -->
-        <div class="col-md-4">
-          <!-- no content -->
-        </div>
-  
-        <!-- 4th column of header row has nav bar -->
-        <div class="col-md-3">
-  
-          <ul class="nav justify-content-end pt-3" id="nav-overrides">
-  
-            <!-- Nav to About -->
-            <li class="nav-item">
-              <a class="nav-link active" href="#about">About</a>
-            </li>
-  
-            <li>
-              <!-- vertical line separator with spaces (different color) -->
-              <p class="lightgrey-vline">|</p>
-            </li>
-  
-            <!-- Nav to Portfolio -->
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-  
-            <li>
-              <!-- vertical line separator with spaces (different color) -->
-              <p class="lightgrey-vline">|</p>
-            </li>
-  
-            <!-- Nav to Contacts -->
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-  
-          </ul> <!-- of unordered list-->
-  
-        </div> <!-- of nav column in header row -->
-      </div> <!-- of header row -->
-  
-    </div> <!-- of header container -->
-  
+    <!-- Header is one row  -->
+    <div class="row" id="hdr-row-height">
+
+      <!-- First column of header row is empty. -->
+      <div class="col-md-1">
+        <!-- no content -->
+      </div>
+
+      <!-- 2nd column of header row has name -->
+      <div class="col-md-3" id="adj-padding-color-margin">
+        <h2 class="h2-overrides"><strong>Maura M. Slavin</strong></h2>
+      </div>
+
+      <!-- 3rd column of header row is empty -->
+      <div class="col-md-4">
+        <!-- no content -->
+      </div>
+
+      <!-- 4th column of header row has nav bar -->
+      <div class="col-md-3">
+
+        <ul class="nav justify-content-end pt-3" id="nav-overrides">
+
+          <!-- Nav to About -->
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">About</a>
+          </li>
+
+          <li>
+            <!-- vertical line separator with spaces (different color) -->
+            <p class="lightgrey-vline">|</p>
+          </li>
+
+          <!-- Nav to Portfolio -->
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+
+          <li>
+            <!-- vertical line separator with spaces (different color) -->
+            <p class="lightgrey-vline">|</p>
+          </li>
+
+          <!-- Nav to Contacts -->
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+        </ul> <!-- of unordered list-->
+
+      </div> <!-- of nav column in header row -->
+    </div> <!-- of header row -->
+
+  </div> <!-- of header container -->
 
 
-  <section class="page-content">
-    <!-- block with h2 header & content -->
-    <h2 class="clearfix">Maura's Portfolio</h2> <!-- clearfix clears floats for subsequent elements -->
 
-    <div id="allprojects">
-      <!-- container for all projects -->
+  <div class="container bg page-content">
+    <!-- 6 rows:  
+          1:  blank row (just background shows)
+          2:  sub-header
+          3:  short row (just background)
+          4:  first 2 projects  
+          5:  short row (just background)
+          6:  projects 3 & 4 
+          7:  short row (just background)
+          8:  project 5 
+          9:  blank row (with white buffer)
+         10:  blank row (just backround shows)
+    -->
+    <!-- 1st row; blank row -->
+    <div class="row top-blank-row  ">
+      <!-- so border shows-->
+    </div>
 
-      <div class="project-float">
+    <!-- of second row (sub-header)-->
+    <div class="row justify-content-md-center">
+      <!-- "About (name)" -->
+      <div class="col-md-10 bg-white">
+        <h3>Maura's Portfolio</h3>
+      </div>
+    </div> <!-- of 2nd row (sub-header)-->
+
+    <!-- third row, short blank row (just background) -->
+    <div class="row justify-content-md-center short-blank-row">
+      <!-- so border shows-->
+      <div class="col-md-10 bg-white">
+
+      </div>
+    </div> <!-- end of 3rd row -->
+
+    <!-- of fourth row (first 2 projects) -->
+    <div class="row clearfix">
+      <!-- <div class="col-md-3 offset-md-1 float-left adj-padding-col clearfix"> -->
+      <div class="col-md-3 offset-md-1 adj-padding-col">
         <!-- first project -->
-        <img class="image" src="assets/images/platypus-image.png" alt="Playtypus" /> <!-- image for project -->
-        <a class="proj-links proj-link-left" href="https://mauraslavin.github.io/platypus/" target="_blank">Platypus</a>
+        <div class="proj-container bg-white">
+          <img class="img-thumbnail adj-padding-img clearfix" src="assets/images/platypus-image.png" alt="Playtypus" />
+          <!-- image for project -->
+          <a class="proj-links img-text-align" href="https://mauraslavin.github.io/platypus/"
+            target="_blank">Platypus</a>
+        </div>
         <!-- link for project on top of image -->
       </div>
 
-      <div class="clearfix project-float">
-        <!-- second project; start new float afterwards -->
-        <img class="image" src="assets/images/floats-image.png" alt="Floats" /> <!-- image for project 2 -->
-        <a class="proj-links proj-link-right" href="https://mauraslavin.github.io/Floats/" target="_blank">Floats</a>
-        <!-- link on top of project 2 image -->
+      <div class="col-md-1 bg-white"></div> <!-- space between projects is white -->
+
+      <div class="col-md-3 adj-padding-col  ">
+        <!-- second project -->
+        <div class="proj-container bg-white">
+          <img class="img-thumbnail adj-padding-img clearfix" src="assets/images/Floats-image.png" alt="Floats" />
+          <!-- image for project -->
+          <a class="proj-links img-text-align" href="https://mauraslavin.github.io/Floats/" target="_blank">Floats</a>
+        </div>
       </div>
 
-      <div class="project-float">
-        <!-- third project (use data for proj 1 for now) -->
-        <img class="image" src="assets/images/maura-bio.png" alt="Maura" /> <!-- image for project -->
-        <a class="proj-links proj-link-left" href="https://mauraslavin.github.io/student-bio/" target="_blank">Student
-          Bio</a> <!-- link for project on top of image -->
+      <div class="col-md-3 bg-white"></div> <!-- space after projects is white -->
+
+    </div> <!-- of 4th row -->
+
+    <!-- fifth row, short blank row (just background) -->
+    <div class="row justify-content-md-center short-blank-row  ">
+      <!-- so border shows-->
+      <div class="col-md-10 bg-white">
+        <!-- white background here -->
+      </div>
+    </div> <!-- of fifth row (blank row) -->
+
+    <!-- of sixth row (next 2 projects) -->
+    <div class="row clearfix">
+      <!-- <div class="col-md-3 offset-md-1 float-left adj-padding-col clearfix"> -->
+      <div class="col-md-3 offset-md-1 adj-padding-col">
+        <!-- first project -->
+        <div class="proj-container bg-white">
+          <img class="img-thumbnail adj-padding-img clearfix" src="assets/images/platypus-image.png" alt="Playtypus" />
+          <!-- image for project -->
+          <a class="proj-links img-text-align" href="https://mauraslavin.github.io/platypus/" target="_blank">Platypus
+            2</a>
+        </div>
+        <!-- link for project on top of image -->
       </div>
 
-      <div class="clearfix project-float">
-        <!-- fourth project; start new float afterwards (use data for proj 2 for now) -->
-        <img class="image" src="assets/images/platypus-image.png" alt="Playtypus" /> <!-- image for project 2 -->
-        <a class="proj-links proj-link-right" href="https://mauraslavin.github.io/platypus/" target="_blank">Platypus
-          2</a> <!-- link on top of project 2 image -->
+      <div class="col-md-1 bg-white"></div> <!-- space between projects is white -->
+
+      <div class="col-md-3 adj-padding-col  ">
+        <!-- second project -->
+        <div class="proj-container bg-white">
+          <img class="img-thumbnail adj-padding-img clearfix" src="assets/images/Floats-image.png" alt="Floats" />
+          <!-- image for project -->
+          <a class="proj-links img-text-align" href="https://mauraslavin.github.io/Floats/" target="_blank">Floats 2</a>
+        </div>
       </div>
 
-      <div class="clearfix project-float">
-        <!-- fourth project; start new float afterwards (use data for proj 2 for now) -->
-        <img class="image" src="assets/images/floats-image.png" alt="Floats" /> <!-- image for project 2 -->
-        <a class="proj-links proj-link-left" href="https://mauraslavin.github.io/Floats/" target="_blank">Floats 2</a>
-        <!-- link on top of project 2 image -->
+      <div class="col-md-3 bg-white"></div> <!-- space after projects is white -->
+
+    </div> <!-- of 6th row -->
+
+    <!-- seventh row, short blank row (just background) -->
+    <div class="row justify-content-md-center short-blank-row  ">
+      <!-- so border shows-->
+      <div class="col-md-10 bg-white">
+        <!-- white background here -->
+      </div>
+    </div> <!-- of seventh row (blank row) -->
+
+
+    <!-- 8th row, 5th project -->
+    <div class="row clearfix">
+      <!-- <div class="col-md-3 offset-md-1 float-left adj-padding-col clearfix"> -->
+      <div class="col-md-3 offset-md-1 adj-padding-col">
+        <!-- first project -->
+        <div class="proj-container bg-white">
+          <img class="img-thumbnail adj-padding-img clearfix" src="assets/images/platypus-image.png" alt="Playtypus" />
+          <!-- image for project -->
+          <a class="proj-links img-text-align" href="https://mauraslavin.github.io/platypus/" target="_blank">Platypus
+            2</a>
+        </div>
+        <!-- link for project on top of image -->
       </div>
 
+      <div class="col-md-7 bg-white"></div> <!-- space after projects is white -->
+    </div> <!-- of 8th row -->
 
-    </div>
+    <!-- 9th row, short blank row (just background) -->
+    <div class="row justify-content-md-center short-blank-row">
+      <!-- so border shows-->
+      <div class="col-md-10 bg-white">
 
-  </section>
+      </div>
+    </div> <!-- end of 9th row -->
+
+    <!-- 10th bottom row -->
+    <div class="row bottom-blank-row"></div>
+    <!-- so border shows-->
+  </div> <!-- of 10thth (blank) row -->
+  </div> <!-- end of container with page content (links to projects) -->
+
+
+
+
 
   <div class=clearfix id="footer">
     <!-- footer -->
