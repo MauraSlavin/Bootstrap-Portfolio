@@ -1,140 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
-<!-- <html charset="UTF-8">  -->
-
-<!-- Portfolio website for Maura M Slavin -->
-
 
 <head>
   <meta charset="UTF-8">
-  <title>Maura M Slavin</title> <!-- Appears on tab -->
-  <!-- bootstrap elements -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <!-- Linking my CSS overrides to Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>About Maura</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">  <!-- link bootstrap css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!-- link to my stylesheet -->
 </head>
-
 
 <body>
 
-  <!-- Header (same for all pages) -->
-
-  <div class="container clearfix" id="container-overrides">
-
-    <!-- Header is one row  -->
-    <div class="row" id="hdr-row-height">
-
-      <!-- First column of header row is empty. -->
-      <div class="col-md-1">
-        <!-- no content -->
-      </div>
-
-      <!-- 2nd column of header row has name -->
-      <div class="col-md-3" id="adj-padding-color-margin">
-        <h2 class="h2-overrides"><strong>Maura M. Slavin</strong></h2>
-      </div>
-
-      <!-- 3rd column of header row is empty -->
-      <div class="col-md-3">
-        <!-- no content -->
-      </div>
-
-      <!-- 4th column of header row has nav bar -->
-      <div class="col-md-4">
-
-        <ul class="nav justify-content-end pt-3" id="nav-overrides">
-
-          <!-- Nav to About -->
-          <li class="nav-item">
-            <a class="nav-link active" href="#about">About</a>
-          </li>
-
-          <li>
-            <!-- vertical line separator with spaces (different color) -->
-            <p class="lightgrey-vline">|</p>
-          </li>
-
-          <!-- Nav to Portfolio -->
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-
-          <li>
-            <!-- vertical line separator with spaces (different color) -->
-            <p class="lightgrey-vline">|</p>
-          </li>
-
-          <!-- Nav to Contacts -->
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-
-        </ul> <!-- of unordered list-->
-
-      </div> <!-- of nav column in header row -->
-    </div> <!-- of header row -->
-
-  </div> <!-- of header container -->
+  <!-- header has my name and nav bar -->
+  <header id="myHeader">
+    <div class="container">
+      <a href="index.html" id="myName">Maura M. Slavin</a>
 
 
+      <!-- Navigation bar from bootstrap, with my links plugged in, disable button removed, hide brand -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
 
+            </ul>
+          </div>
+        </nav>
 
-  <!-- main content is a container of one row -->
-  <div class="container bg page-content">
-
-    <div class="row top-blank-row">
-      <!-- so border shows-->
     </div>
+  </header>
 
-    <div class="row justify-content-md-center">
-      <!-- "About (name)" -->
-      <div class="col-md-10 bg-white">
-        <h3>About Maura</h3>
-      </div>
-    </div> <!-- of 2nd row w/pic & paragraph -->
+  <!-- main container has info that's different on each page -->
+  <div id="main-container" class="container">
+    <!-- header (my name) & paragraph -->
+    <section class="main-section">
+      <h1>About Maura</h1>
 
-    <div class="row justify-content-md-center">
-      <!-- pic & paragraph -->
-      <div class="col-md-10 bg-white">
+      <!-- my picture -->
+      <img src="assets/images/maura-bio.png" class="auth-image" alt="Maura's pic">
 
-        <img class="float-left" id="my-face" src="assets/images/maura-bio.png" alt="My Portrait"> <!-- image of me! -->
-        <article class="text">
-          <!-- div to consistently format text in multiple paragraphs  -->
-          <!-- first paragraph has different top margin to keep it even with the image -->
-          <p class="first-parag">Hello! I’m Maura Slavin, and I’m excited to get back into coding!</p>
-          <p>Before the "boring" career-related bio, here are some fun facts about me:</p>
-          <ul id="list-margin">
-            <li>I once jumped out of an airplane.</li>
-            <li>All four of our daughters were born without painkillers.</li>
-            <li>I hiked Mt. Jefferson by myself. I didn't make it to the top, but hope to one day. It was BEAUTIFUL!!
-            </li>
-            <li>I'm teaching myself Spanish on Duolingo.</li>
-          </ul>
-          <p>I worked for IBM as a programmer in the past and took a break to raise my family. I have always enjoyed
-            working on the computer. Much of our household tasks are digitalized, from family finances to household
-            chores. I’m eagerly anticipating work that stimulates me intellectually. Since leaving IBM, I have done many
-            diverse things. Starting slow, with leading Girl Scout troops and teaching religious ed classes. Then
-            stepping up to overseeing regional Girl Scout financial accounts and part time jobs. Most recently, I’ve led
-            the formation of a new 501c3 non-profit, Marina’s Miles (see MarinasMiles.org) which has awarded $12,000 in
-            scholarships over the past three years, and has almost twice that invested for future scholarships.</p>
-          <p>I enjoy spending time with my family, bicycling, reading, hiking and just being outside (in almost any kind
-            of weather – as long as I’m dressed properly ;) ).</p>
-          <p>Thank you for visiting my page, and I hope we have the pleasure of meeting soon!</p>
-      </div> <!-- of column w/pic & paragraph -->
-    </div> <!-- of row w/pic & paragraph -->
+      <p>Hello! I’m Maura Slavin, and I’m excited to get back into coding!</p>
+      <p>Before the "boring" career-related bio, here are some fun facts about me:</p>
+      <ul>
+        <li>I once jumped out of an airplane.</li>
+        <li>All four of our daughters were born without painkillers.</li>
+        <li>I hiked Mt. Jefferson by myself. I didn't make it to the top, but hope to one day. It was BEAUTIFUL!!</li>
+        <li>I'm teaching myself Spanish on Duolingo.</li>
+      </ul>
+      <p>I worked for IBM as a programmer in the past and took a break to raise my family. I have always enjoyed working
+        on the computer. Much of our household tasks are digitalized, from family finances to household chores. I’m
+        eagerly anticipating work that stimulates me intellectually.
+        Since leaving IBM, I have done many diverse things. Starting slow, with leading Girl Scout troops and teaching
+        religious ed classes. Then stepping up to overseeing regional Girl Scout financial accounts and part time jobs.
+        Most recently, I’ve led the formation of a new 501c3 non-profit, Marina’s Miles (see MarinasMiles.org) which has
+        awarded $12,000 in scholarships over the past three years, and has almost twice that invested for future
+        scholarships.</p>
+      <p>I enjoy spending time with my family, bicycling, reading, hiking and just being outside (in almost any kind of
+        weather – as long as I’m dressed properly ;) ).</p>
+      <p>Thank you for visiting my page, and I hope we have the pleasure of meeting soon!</p>
 
-    <div class="row bottom-blank-row">
-      <!-- so border shows-->
-    </div>
+    </section>
 
-
-  </div> <!-- of container -->
-
-  <div id="footer">
-    <!-- footer -->
-    <p>Copyright @2019</p>
   </div>
 
+  <!-- footer  -->
+  <footer>
+    <div class="container">
+      Copyright &copy;
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -1,364 +1,218 @@
-/* Body is centered, and uses whole page */
 body {
-  margin: auto;                                       /* helps with centering */
-  width: 100%;
-  font-family: 'Arial', 'Helvitica Neue', Helvitica, sans-serif;  /* per instructions */
-  font-size: 12px;
-  line-height: 18pt;                                  /* makes 1.5 spacing (12px font w/ 18px line-height) */
-  color: #777777;                                   /* regular text color */                     
+  /* default fonts, size, line spacing and text color for whole site. */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #777777;
+  margin-top: 0;
+  background: url("../images/aqua_marble_seamless.jpg");  /* background for the whole page */
 }
 
-
-/* Header doesn't use the full width of the screen. */
-header {
-  display: block;
-  margin: auto;
-  padding: 0;     /* was "0 194.5px" */                             /* leaves 960 for content */
-  background-color: #ffffff;                       /* main header background color is white */
-  border: solid 0px #cccccc;
-  border-bottom-width: 3px;
+* {
+  box-sizing: border-box;  /* includes border & margin in item's width */
 }
 
-#container-overrides {
-  /* width: 100%; */
-  border-bottom: 3px solid #cccccc;
-  margin: 0;
+/* general */
+
+.container {
+  width: 100%;  /* use all 960px */
+  max-width: 960px;  /* main content block never gets bigger than this */
+  margin: 0 auto;  /* no top margin */
+  clear: both;   /* clear any extraneous floats */
 }
 
-/* font & default spacing for Main header and Section headers */
-.h2-overrides, h3 {
-  font-family: 'Georgia', Times, 'Times New Roman', serif;  /* per instructions */
-  padding: 10px 10px 10px 20px;
-  font-size: 24px;
+h1, h2, h3, p {
+  margin-bottom: 20px;  /* default spacing after each header and paragraph */
 }
 
-
-/* The header goes to the left (navigation links to its right) */
-.h2-overrides {
-  float: left;
-  margin: auto;
-/*  padding-bottom: 10px;  */
-  color:white;                    /* white text is nice on teal-ish background! */
-  background-color: #4aaaa5;      /* teal */
- /* height: 40px; */
-  padding-top: 25px;
+p:last-child {
+  margin-bottom: 0;  /* no extra space after last paragraph */
 }
 
-#hdr-row-height {
-  height: 75px;
+h1, h2, h3 {
+  /* default text attributes for headers */
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  color: #4aaaa5;
 }
 
-#adj-padding-color-margin {
-  padding: 0;
-  background-color: #4aaaa5;
-  margin-right: 20px;   /* determines where nav items are displayed */
-  height: 75px;
+h1 {
+  /* make more space after primary headers; bigger font & more space between lines */
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  /* ligth border after primary header */
+  border-bottom: 3px solid #dddddd;
 }
 
-#nav-overrides {
-  width: 280px;
+h2,
+h3 {
+  font-size: 22px;
 }
 
+/* header */
 
-h3 {                                     /* text color for h3 section headers */
-  color: #4aaaa5;                                 /* teal */
-}
-
-
-h3:after {                        /* separator line is drawn as a border under h3 header */
-  content : "";                               /* Needed for pseudo element to work */
-  display: block;                             /* puts border on it's own line */
-/*  width  : 930px;   */                          /* length of border */
-  border-bottom: 2px solid #cccccc;         /* thickness, style & color of border */
-  padding-bottom: 20px;                        /* space between page title & border */
-}
-
-
-/* Navigation links are on the same line as the page header, to the right */
-/* They should be vertically centered with respect to the header */
-.header-nav {
-  float: right;                   /* puts the navagation links to the right of the block */
-  text-align: right;              /* link text is right-justified */
-  margin-top:25px;               /* to vertical center wrt h2 header */
-  margin-bottom: 0px;             /* make name sit on border */
-}
-
-
-.header-nav li {
-  display: inline-block;          /* keeps choices on same line */
-  font-size: small;               /* small font */
-}
-
-
-.header-nav li a:hover {      /* hightlight nav when hovered over */
-  background-color: #4aaaa5;
-  color: #ffffff;
-}
-
-
-/* Anchor tags for href links have no underlines, and the text is gray  */
-a {
-  text-decoration: none;          /* no underlines */
-  color: #777777;               /* gray */
-}
-
-
-/* The color of the "|" character to separate link text is a lighter color. */
-.lightgrey-vline {
-  color: lightgrey;
-  margin: 0;
-  font-size: 12px;
-  padding-top: 8px;
-}
-
-
-/* format element that has the main page content in it, consistent across all pages */
-.page-content {
-  border: solid 0;
-  width: 100%;                                     /* make content width 960px as per instructions */
-  /* border-width: 30px 194.5px 80px 194.5px;        /* leaves 960px for block width; top & bottom image borders */
-  margin: 0;
-
-}
-
-
-.top-blank-row {
-  content: "  ";
-  height: 60px;
-}
-
-
-.bottom-blank-row {
-  content: "  ";
-  height: 120px;
-}
-
-
-.short-blank-row {
-  content: "  ";
-  height: 40px;
-}
-
-
-.bg {
-  /* The image used */
-  background-image: url(../images/aqua_marble_seamless.jpg);
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* image goes to the left (so text can wrap around it), and leave buffer between image and text */
-#my-face {
-  margin-right: 15px;                               /* leaves space between image and text */
-  padding: 0px 0px 0px 20px;                        /* leaves space left of the image so it lines up with the header & text */
-}
-
-
-/* paragraphs all formatted similarly */
-.text {
-  vertical-align: top;                              /* align with top of image */
-  padding: 0px 20px 0px 20px;                       /* lines up with image and heading; and same size "margin" on the right */
-}
-
-
-.first-parag {                                        /* no space before first paragraph, to line up with image */
-  margin-top: -5px;
-}
-
-
-#list-margin {
-  margin-left: 130px;                          /* so it doesn't wrap around the image */
-  line-height: 19px;
-}
-
-.adj-padding-img {
-  margin: 0;
-  padding: 0;
-}
-
-.adj-padding-col {
-  padding: 0;
-}
-
-#allprojects {                                    /* element to hold all the projects */
-  height: 1000px;
-  width: 960px;
-  background-color: #ffffff;
-}
-
-
-.img-text-align {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #4aaaa5;
-  color: white;
-  width: 100%;
-  padding: 20px 0px;
-  top: 0;
-  margin-left: 0px;
-  width: 283px;
-}
-
-.proj-container {
-  position: relative;
-  text-align: center;
-  padding: 20px;
-}
-
-
-.proj-links {                             /* formats everything that is the same for all the links & images */
-  height: 40px;
-  width: 244px;
-  font-size: large;
-  background-color: #4aaaa5;
-  color: #ffffff;
-  margin: 200px 0 0 0;
-  text-align: center;
-  padding: 8px 0 0 0;
-  position: absolute;                   /*  the teal box is placed relative to the parent element */
-}
-
-.proj-link-left {                     /* all the projects that are on the left, are 194.5px from the left edge of the parent element */
-    left: 194.5px;
-}
-
-
-.proj-link-right {                     /* all the projects that are on the right, are 535px from the left edge of the parent element */
-  left: 535px;
-}
-
-
-.proj-links:hover {                     /* turn the links a darker teal with black text when hovered over */
-    background-color: #015a56;
-    color: black;
-}
-
-
-.project-float {      /* all images float left */
-  float: left;
-}
-
-
-/* size of portfolio images */
-.image {
-  height: 250px;
-  width: 300px;
-  margin: 20px;
+#myHeader {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
  }
 
 
- /* format block that prompts for input: things that are common for consistency */
-.input-prompt-block {
-  margin: 0 20px;
-  font-size: 12px;
+#myName {
+  float: left;
+  width: 370px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav a {
   display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid darkgrey;
 }
 
-
-#form-padding {
-  padding-left: 20px;
+nav a:first-child {
+  border-left: 0 none;
 }
 
-.input-prompt {
-  margin-bottom: 10px;
-  vertical-align: text-top;
+/* footer */
+
+footer {
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #ffffff;
+  color: #cccccc;
+  text-align: center;
+  background: #666666;
+  border-top: 8px solid #4aaaa5;
+  height: 50px;
 }
 
-#submit-margin {
+h3, h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+/* main */
+
+#main-container {
+  padding-top: 130px;
+  min-height: calc(100vh - 70px);
+}
+
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+/* contact page */
+
+#contact-form ul {
   margin-bottom: 20px;
 }
 
-#first-prompt {
-  line-height: 12px;
+#contact-form li {
+  margin-bottom: 10px;
 }
 
-/* one line input box */
-input[type=text-short], select {
-  width: 100%;
-  padding: 8px 8px;
-  margin: 4px 0;
-  font-size: 11px;
-/*  display: block; */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-
-/* multiple line input box */
+label,
+input[type=text],
+input[type=email],
 textarea {
   display: block;
   width: 100%;
 }
 
-
-#message {
-  padding: 8px 8px;
-  margin: 4px 0;
-  font-size: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #dddddd;
 }
 
-
-input[type=text-long] {
-    width: 100%;
-    height: 100px;
-    padding: 8px 8px;
-    margin: 4px 0;
-    font-size: 11px;
- /*   display: block; */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-
-  input[type=submit] {
-    width: 100px;
-    background-color: #4aaaa5;
-    color: white;
-    padding: 8px 8px;
-    margin: 50px 0 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-
-  /* change color of submit box & text to black when hovering over it */
-  input[type=submit]:hover {
-    background-color: #015a56;
-    color: black;
-  }
-
-  
-/* simple footer block */
-#footer {
-  background-color: #666666 ;                     /* dark grey background */
-  color: lightgrey;                               /* light grey text */
-  border-top: solid 5px #4aaaa5;                  /* border above footer to make color scheme of page */
-  margin: 0;
-  padding: 0;
-  text-align: center;                               /* text centered */
-  font-size: 10px;                                  /* small font */
-  position: fixed;                                  /* position and bottom make it a sticky footer */
-  bottom: 0;
-  width: 100%;                                      /* entire width of the screen */
+textarea {
+  height: 200px;
 }
 
-
-/* make float work correctly */
-.clearfix::after {
-  content: " ";
-  display: block;
-  clear: both;
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
 }
